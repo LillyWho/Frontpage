@@ -1,3 +1,7 @@
 /*
-  Javascript File for index.html @ /index.html
+  Javascript File for koth.html @ /mapshowcase/koth.html
  */
+
+console.log("koth.js Javascript File has loaded.")
+
+/* Your Code Below */
