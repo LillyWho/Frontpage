@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /stylesheet/
+Disallow: /scripts/
+Disallow: /media/fonts/
+Disallow: /media/logos/favicon/
