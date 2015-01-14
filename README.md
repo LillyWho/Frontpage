@@ -3,4 +3,4 @@ Welcome to the new github repository for Dirsec.net. This is the next iteration 
 
 Be sure to check out the wiki - it is fully documented and I've spent **literally forever writing the docs**. Read it.
 
-https://github.com/peterpacz1/dirsec_reborn/wiki
+https://github.com/Dirsec/dirsec-website/wiki
