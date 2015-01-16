@@ -136,6 +136,16 @@ h3 {
 	text-align: justify;
 }
 
+/* Horizontal Line Styling */
+hr {
+	display: block;
+	height: 1px;
+    border: 0;
+	border-top: 2px solid #462D26;
+    margin: 1em 0;
+	padding: 0;
+	}
+
 /* ../media and Image Styling */
 #logo-icon {
 	width: 100%;
