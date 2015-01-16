@@ -1,7 +1,20 @@
 /*
-  Javascript File for koth.html @ /mapshowcase/koth.html
- */
+  Javascript File for koth.html @ /showcase/koth.html
+*/
 
-console.log("koth.js Javascript File has loaded.")
+/* Checks if Javascript works */
+console.log("Javascript is working");
 
-/* Your Code Below */
+/* Check if Jquery works */
+window.onload = function() {
+    if (window.jQuery) {
+
+        // jQuery is loaded
+        console.log("jQuery has loaded successfully!");
+
+    } else {
+
+        // jQuery is not loaded
+        console.log("Warning - jquery has not loaded somehow!");
+    }
+}
