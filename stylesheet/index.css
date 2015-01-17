@@ -97,7 +97,9 @@ table {
 
 /* General Style Changes */
 body {
-	background-color: #F5E7DE;
+	background-image: url("../media/images/background.jpg");
+	backgroun-repeat: no-repeat;
+
 }
 
 #wrapper {
