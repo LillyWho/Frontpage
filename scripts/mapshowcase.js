@@ -18,6 +18,13 @@ window.onload = function() {
         console.log("Warning - jquery has not loaded somehow!");
     }
 
+    /* Slides open website on load */
+    console.log("Sliding out panel");
+    $("#body").slideToggle("slow");
+
+    /* Unblurs */
+
+
     /* Opens map install panel on click */
     $("#mapinstall-header").click(function(){
 

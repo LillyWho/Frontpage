@@ -17,4 +17,11 @@ window.onload = function() {
         // jQuery is not loaded
         console.log("Warning - jquery has not loaded somehow!");
     }
+
+    /* Slides open website on load */
+    console.log("Sliding out panel");
+    $("#body").slideToggle("slow");
+
+    /* Unblurs */
+
 }

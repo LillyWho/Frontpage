@@ -17,4 +17,5 @@ window.onload = function() {
         // jQuery is not loaded
         console.log("Warning - jquery has not loaded somehow!");
     }
+
 }

@@ -244,6 +244,8 @@ hr {
     z-index: 10;
     position: relative;
     /* height: 30em; */
+    display: none;
+
 }
 
 #map-description {
