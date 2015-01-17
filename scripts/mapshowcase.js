@@ -17,4 +17,14 @@ window.onload = function() {
         // jQuery is not loaded
         console.log("Warning - jquery has not loaded somehow!");
     }
+
+    /* Opens map install panel on click */
+    $("#mapinstall-header").click(function(){
+
+        console.log("Panel Toggled");
+
+        /* Slides open panel */
+        $("#mapinstall-panel").slideToggle("fast");
+
+    });
 }

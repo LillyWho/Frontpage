@@ -246,6 +246,21 @@ hr {
 	/* height: 30em; */
 }
 
+#mapinstall-header {
+	padding:5px;
+	text-align:center;
+	background-color:#e5eecc;
+	border:solid 1px #c3c3c3;
+}
+
+#mapinstall-panel {
+	text-align:center;
+	background-color:#e5eecc;
+	border:solid 1px #c3c3c3;
+	padding:50px;
+	display:none;
+}
+
 #map-description {
 	padding: 1em;
 }
