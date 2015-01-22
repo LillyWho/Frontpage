@@ -42,6 +42,9 @@
 
         <!-- Include CSS Stylesheet -->
         <link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+
+        <!-- Include Jquery -->
+        <script type="text/javascript" src="scripts/jquery/jquery.js"></script>
     </head>
     <body>
 
@@ -107,6 +110,7 @@
                                             Click Here to Connect to Server
                                         </p>
                                     </a>
+                                    <br>
                                     <p>
                                         The link will launch a direct protocol request with steam, and if you accept it will launch your TF2 game and join our server!
                                     </p>
@@ -120,6 +124,7 @@
                                             Click Here to Join Steam Group
                                         </p>
                                     </a>
+                                    <br>
                                     <p>
                                         Our steam group is the hub of our community, will announcements will be made and map/server suggestions can be posted!
                                     </p>
@@ -139,6 +144,25 @@
                                 </div>
                                 -->
                             </div>
+
+                            <!-- Map Showcase Div -->
+                            <div class="content" id="mapshowcase">
+                                <h2 id="mapshowcase-title"> Map Repository </h2>
+                                <p>
+                                    Do you want to take a scroll through our excellent collection of custom maps? Click here for the
+                                    newly made map showcase!
+                                </p>
+                                <br>
+
+                                <!-- Map Showcase Button -->
+                                <div class="inline content join-div" id="join-maplist">
+                                    <a href="tf/maps/">
+                                        <p id="browse-button">
+                                            Browse Map Directory
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
                         </td>
 
                         <!-- Second Column -->
@@ -146,7 +170,7 @@
 
                             <!-- Div containing old showcase -->
                             <div class="inline">
-                                <h2>Map Showcase</h2>
+                                <h2>Featured Maps</h2>
 
                                 <!-- Images -->
                                 <img src="media/images/old-mapshowcase/pl_borneo.jpg" alt="pl_borneo" class="slideshow">
@@ -187,6 +211,7 @@
 
                 <!-- Donations -->
                 <div class="content" id="body-two">
+                    <br>
                     <h2>Donations</h2>
                     <p>Although I'd rather not bother my players with begging, I do realize it's an essential factor that would determine the survival of our community. Therefore, I'm going to set up a small and unobstructive donation system... it's coming up soon!</p>
                 </div>
@@ -208,8 +233,7 @@
 
             <!-- Body for the footer that contains the maps -->
             <div class="content" id="map-body">
-                <h2 id="map-body-header">The Maps:</h2>
-                <hr>
+                <h1 id="map-body-header">The Maps:</h1>
 
                 <!-- Maps Section -->
                 <table id="maptable">
