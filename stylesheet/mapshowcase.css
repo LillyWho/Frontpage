@@ -260,6 +260,7 @@ hr {
     */
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQ0lEQVQYV2Oca6j/f/r/fwyEAKOJge7/TEYmBkKKwQpBphFSDFdISDGKQnyKMRTiUoxVITbFOBWiK8arEFkxQYUwxQBN+SsXHK+N0QAAAABJRU5ErkJggg==);
 	color: #34302D;
+	box-shadow: 1px 1px 1px 0px;
 }
 
 #mapinstall-panel {
@@ -287,16 +288,39 @@ hr {
 }
 
 #row1 {
-	height: 6em;
+	height: 14em;
 	align: center;
+	margin: 0.5em
 }
 #row2 {
-	height: 6em;
+	height: 14em;
+	align: center;
+	margin: 0.5em;
+}
+
+/* Tons of stuff */
+#control-point {
+
+}
+
+#capture-the-flag {
+
+}
+
+#king-of-the-hill {
+
+}
+
+#payload {
+
 }
 
 .cell {
-	height: 6em;
-	width: auto;
+	height: 12em;
+	width: 18em;
+	margin: 1em;
+	background-color: #34302D;
+	text-align: center;
 }
 
 #copyright {
