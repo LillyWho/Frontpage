@@ -18,6 +18,11 @@ window.onload = function() {
         console.log("Warning - jquery has not loaded somehow!");
     }
 
+    /* Converts to sentence case */
+    String.prototype.toProperCase = function () {
+        return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+    };
+
     /* Slides open website on load */
     console.log("Sliding out panel");
     $("#body").slideToggle("slow");
@@ -33,13 +38,696 @@ window.onload = function() {
             /* Changes the info panel values here depending on what triggured */
             switch(element) {
             case "#a1":
-                    $("#map-name").text("Axle");
+                    var currentmap = "axle"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
                     $("#map-detailed-description").text("Welcome to the axle map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
                 break;
 
             case "#a2":
+                    var currentmap = "beamvalley"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#a3":
+                    var currentmap = "croissant"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#a4":
+                    var currentmap = "desertfortress"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#a5":
+                    var currentmap = "desertion"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+
 
                 break;
+            case "#b1":
+                    var currentmap = "dusk"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the axle map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#b2":
+                    var currentmap = "edifice"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#b3":
+                    var currentmap = "fallout"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#b4":
+                    var currentmap = "follower"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+            case "#b5":
+                    var currentmap = "freightyard"
+                    var maptype = "cp"
+
+                    $("#map-name").text(currentmap.toProperCase());
+                    $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                    /* Secrets and hints */
+                    $("#li-1").text("First Secret");
+                    $("#li-2").text("Second Secret");
+                    $("#li-3").text("Third Secret");
+
+                    /* Changes slideshow images */
+                    for (var i = 1; i < 4; i++) {
+                        console.log("Attempting to change image src for slideshow...")
+                        var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                        console.log("current filepath equals " + filepath);
+                        var identity = "#slideshow-" + i.toString();
+                        console.log(identity);
+                        $(identity).attr("src",filepath);
+                    }
+                break;
+
+                case "#c1":
+                        var currentmap = "furnace"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the axle map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#c2":
+                        var currentmap = "glacier"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#c3":
+                        var currentmap = "glassworks"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#c4":
+                        var currentmap = "grand canyon"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#c5":
+                        var currentmap = "gydan"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#d1":
+                        var currentmap = "indulge"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the axle map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#d2":
+                        var currentmap = "keikoku"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#d3":
+                        var currentmap = "labor"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#d4":
+                        var currentmap = "logjam"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#d5":
+                        var currentmap = "overflow"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#e1":
+                        var currentmap = "redstone"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the axle map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#e2":
+                        var currentmap = "silvertrail"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#e3":
+                        var currentmap = "snowplow"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#e4":
+                        var currentmap = "stoneyridge"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#e5":
+                        var currentmap = "sunshine"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+                case "#f1":
+                        var currentmap = "switchback"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the axle map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#f2":
+                        var currentmap = "tidal"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the beamvalley map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#f3":
+                        var currentmap = "upland"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the croissant map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#f4":
+                        var currentmap = "vanguard"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertfortress map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+                case "#f5":
+                        var currentmap = "zinkenite"
+                        var maptype = "cp"
+
+                        $("#map-name").text(currentmap.toProperCase());
+                        $("#map-detailed-description").text("Welcome to the desertion map!");
+
+                        /* Secrets and hints */
+                        $("#li-1").text("First Secret");
+                        $("#li-2").text("Second Secret");
+                        $("#li-3").text("Third Secret");
+
+                        /* Changes slideshow images */
+                        for (var i = 1; i < 4; i++) {
+                            console.log("Attempting to change image src for slideshow...")
+                            var filepath = "../media/images/mapshowcase/" + maptype + "/" + maptype + " - " + currentmap + "/" + i.toString() + ".jpg";
+                            console.log("current filepath equals " + filepath);
+                            var identity = "#slideshow-" + i.toString();
+                            console.log(identity);
+                            $(identity).attr("src",filepath);
+                        }
+                    break;
+
+
 
             default:
                 console.log("A error has happened with clickwriter");
