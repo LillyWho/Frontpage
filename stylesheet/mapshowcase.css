@@ -258,9 +258,10 @@ hr {
     border-width: 0.3em;
 	border-color: #6A4535;
     */
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQ0lEQVQYV2Oca6j/f/r/fwyEAKOJge7/TEYmBkKKwQpBphFSDFdISDGKQnyKMRTiUoxVITbFOBWiK8arEFkxQYUwxQBN+SsXHK+N0QAAAABJRU5ErkJggg==);
+	background-color: #34302D;
 	color: #34302D;
 	box-shadow: 1px 1px 1px 0px;
+	border-radius: 3px;
 }
 
 #mapinstall-panel {
@@ -270,6 +271,7 @@ hr {
     border-style: solid;
     border-width: 0.3em;
 	border-color: #34302D;
+;
     border-top: none;
 	display:none;
 }
@@ -328,6 +330,8 @@ hr {
 	margin: 1em;
 	background-color: #34302D;
 	text-align: center;
+	border-radius: 3px;
+
 }
 
 .imagetext {
