@@ -22,6 +22,7 @@ window.onload = function() {
     console.log("Sliding out panel");
     $("#body").slideToggle("slow");
 
-    /* Unblurs */
-
+    $(function() {
+        $(".rslides").responsiveSlides();
+    });
 }

@@ -214,6 +214,56 @@ hr {
     padding: 0.5em;
 }
 
+#subheader {
+    text-align: center;
+    background-image: url("../media/images/mapshowcase/cp/cp - beamvalley/2.jpg");
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+    height: 6em;
+    margin: 0 -0.5em;
+
+}
+
+#tableholder table{
+    margin-left:auto;
+    margin-right:auto;
+}
+#tableholder td {
+    padding: 0.3em;
+}
+
+#tableholder td div {
+    padding: 0.5em;
+    width: 8em;
+    box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+
+}
+.map-button {
+    background-color: #9D312F;
+    text-align: center;
+    color: #F5E7DE;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);}
+
+#infopanel {
+    box-shadow: 1px 1px 1px 0px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #6A4535;
+}
+
+#first-column {
+    width: 60%;
+}
+
+#second-column {
+    width: 40%;
+    vertical-align: top;
+}
+
+#slideshow {
+    margin-top: 1em;
+}
+
 /* Div of the footer (red color). Same as header decoration */
 #map-body {
     background-color: #9D312F;
@@ -318,4 +368,40 @@ a:active {
     color: #F08149;
     font-weight: bold;
     text-decoration: none;
+}
+
+/* Responsive slides css */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
 }
