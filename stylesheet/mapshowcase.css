@@ -279,6 +279,7 @@ hr {
 }
 #selection-grid {
 	text-align:center;
+
 }
 
 .columns {
@@ -327,6 +328,28 @@ hr {
 	margin: 1em;
 	background-color: #34302D;
 	text-align: center;
+}
+
+.imagetext {
+	color: #FFFFFF;
+	z-index: 100;
+	position: absolute;
+	top: 18em;
+	width: 16em;
+	margin: 1em;
+	text-shadow: 2px 2px 2px #000000;
+	display: none;
+}
+
+.imagetext-2 {
+	color: #FFFFFF;
+	z-index: 100;
+	position: absolute;
+	top: 33em;
+	width: 16em;
+	margin: 1em;
+	text-shadow: 2px 2px 2px #000000;
+	display: none;
 }
 
 #copyright {

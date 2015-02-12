@@ -44,19 +44,21 @@ window.onload = function() {
     };
 
     /* Fogs out (blurs) any element that is moused over */
-    var mouseover_fogger = function(mousedover){
+    var mouseover_fogger = function(mousedover, text, picture){
         console.log("Starting to fog out");
 
         /* Adds fog out effect to item moused over */
         $(mousedover).mouseover(function() {
             console.log("Fogging out mouseover'ed element at " + mousedover + "!");
-            $(mousedover).foggy();
+            $(picture).foggy();
+            $(text).show();
         });
 
         /* Removes fog out effect when mouse leaves */
         $(mousedover).mouseout(function() {
             console.log("restoring mouseout'ed element at " + mousedover + "!");
-            $(mousedover).foggy(false);
+            $(picture).foggy(false);
+            $(text).hide();
         });
 
     }
@@ -92,6 +94,22 @@ window.onload = function() {
     var map_blur = function(){
         /* id_array contains all id identifiers that will be blurred out */
         var id_array = [
+            "#control-point",
+            "#capture-the-flag",
+            "#king-of-the-hill",
+            "#payload"
+        ];
+
+        /* patched with text ids as well after merge */
+        var text_array = [
+            "#cp-text",
+            "#ctf-text",
+            "#koth-text",
+            "#pl-text"
+        ]
+
+        /* patched with picture ids after merge */
+        var image_array = [
             "#control-point-image",
             "#capture-the-flag-image",
             "#king-of-the-hill-image",
@@ -100,7 +118,7 @@ window.onload = function() {
         var arrayLength = id_array.length;
 
         for (var i = 0; i < arrayLength; i++) {
-            mouseover_fogger(id_array[i]);
+            mouseover_fogger(id_array[i], text_array[i], image_array[i]);
         }
     }
 
@@ -108,10 +126,10 @@ window.onload = function() {
     var map_goes = function(){
         /* id_array contains all id identifiers that will be blurred out */
         var id_array = [
-            "#control-point-image",
-            "#capture-the-flag-image",
-            "#king-of-the-hill-image",
-            "#payload-image"
+            "#cp-text",
+            "#ctf-text",
+            "#koth-text",
+            "#pl-text"
         ];
 
         /* link_array contains all the different links that will be opened */
