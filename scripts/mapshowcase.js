@@ -43,6 +43,33 @@ window.onload = function() {
         });
     };
 
+    /* Fogs out (blurs) any element that is moused over */
+    var mouseover_fogger = function(mousedover){
+        console.log("Starting to fog out");
+
+        /* Adds fog out effect to item moused over */
+        $(mousedover).mouseover(function() {
+            console.log("Fogging out mouseover'ed element at " + mousedover + "!");
+            $(mousedover).foggy();
+        });
+
+        /* Removes fog out effect when mouse leaves */
+        $(mousedover).mouseout(function() {
+            console.log("restoring mouseout'ed element at " + mousedover + "!");
+            $(mousedover).foggy(false);
+        });
+
+    }
+
+    /* Goes to other pages on click */
+    var clickerlink = function(link, element){
+        console.log("Attempting to open " + link + " at " + element + "!");
+        $(element).click(function(){
+            window.location.href = link;
+        });
+    }
+
+
     /* mapshowcase.html specific maphighlight caller */
     var map_highlighter = function() {
 
@@ -58,6 +85,48 @@ window.onload = function() {
 
         for (var i = 0; i < arrayLength; i++) {
             highlighter(id_array[i]);
+        }
+    }
+
+    /* mapshowcase.html specific caller for blurouts*/
+    var map_blur = function(){
+        /* id_array contains all id identifiers that will be blurred out */
+        var id_array = [
+            "#control-point-image",
+            "#capture-the-flag-image",
+            "#king-of-the-hill-image",
+            "#payload-image"
+        ];
+        var arrayLength = id_array.length;
+
+        for (var i = 0; i < arrayLength; i++) {
+            mouseover_fogger(id_array[i]);
+        }
+    }
+
+    /* mapshowcase.html specific caller for link go's */
+    var map_goes = function(){
+        /* id_array contains all id identifiers that will be blurred out */
+        var id_array = [
+            "#control-point-image",
+            "#capture-the-flag-image",
+            "#king-of-the-hill-image",
+            "#payload-image"
+        ];
+
+        /* link_array contains all the different links that will be opened */
+        var link_array = [
+            "showcase/cp.html",
+            "showcase/ctf.html",
+            "showcase/koth.html",
+            "showcase/pl.html"
+        ];
+
+        var idLength = id_array.length;
+        var linkLength = link_array.length;
+
+        for (var i = 0; i < idLength; i++) {
+            clickerlink(link_array[i], id_array[i]);
         }
     }
 
@@ -77,6 +146,8 @@ window.onload = function() {
         slideout("#body");
         map_highlighter();
         map_install_clicker();
+        map_blur();
+        map_goes();
     };
 
     function_caller();

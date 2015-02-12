@@ -303,6 +303,7 @@ hr {
 
 }
 
+
 #capture-the-flag {
 
 }
@@ -313,6 +314,11 @@ hr {
 
 #payload {
 
+}
+
+.type-image{
+	height: 10em;
+	width: auto;
 }
 
 .cell {
