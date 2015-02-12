@@ -22,7 +22,16 @@ window.onload = function() {
     console.log("Sliding out panel");
     $("#body").slideToggle("slow");
 
-    /* Unblurs */
+    /* Increases text shadow on mouseover */
+    $("#mapinstall-header").mouseover(function(){
+        console.log("Mouseover detected!");
+        $("#mapinstall-header").css("box-shadow", "0.5em 0.5em 0.5em 0.5em #000000");
+    });
+    $("#mapinstall-header").mouseout(function(){
+        console.log("Mouseout detected!");
+        $("#mapinstall-header").css("box-shadow", "0 0 0 0 #000000");
+    });
+
 
 
     /* Opens map install panel on click */

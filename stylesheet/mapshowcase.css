@@ -248,18 +248,28 @@ hr {
 
 }
 
+#mapinstall-h3 {
+    text-align: center;
+}
 #mapinstall-header {
 	padding:5px;
-	text-align:center;
-	background-color:#e5eecc;
-	border:solid 1px #c3c3c3;
+	/* background-color:#F5E7DE;
+    border-style: solid;
+    border-width: 0.3em;
+	border-color: #6A4535;
+    */
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQ0lEQVQYV2Oca6j/f/r/fwyEAKOJge7/TEYmBkKKwQpBphFSDFdISDGKQnyKMRTiUoxVITbFOBWiK8arEFkxQYUwxQBN+SsXHK+N0QAAAABJRU5ErkJggg==);
+	color: #34302D;
 }
 
 #mapinstall-panel {
-	text-align:center;
-	background-color:#e5eecc;
-	border:solid 1px #c3c3c3;
-	padding:50px;
+	text-align: justify;
+    padding:  0.5em;
+	background-color:#F5E7DE;
+    border-style: solid;
+    border-width: 0.3em;
+	border-color: #34302D;
+    border-top: none;
 	display:none;
 }
 

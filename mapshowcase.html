@@ -45,6 +45,9 @@
 
         <!-- Include Jquery -->
         <script type="text/javascript" src="scripts/jquery/jquery.js"></script>
+
+        <!-- Include shadow.js -->
+        <script type="text/javascript" src="scripts/jquery/shadow.js"></script>
   </head>
 <body>
 
@@ -94,17 +97,71 @@
                     newer players might want to know! If you wish to install these maps, do not hesitate to install the maps
                     via the instructions below!
                 </p>
+                <br>
             </div>
 
             <!-- Map installation instructions header -->
             <div class="content" id="mapinstall-header">
-                <h3> Map Install Instructions </h3>
+                <!-- <img src="media/plus-button/16.png" alt="plus button" id="plus-button"> -->
+                <h2 id="mapinstall-h3"> Map Install Instructions </h3>
             </div>
 
             <!-- Panel that comes out -->
             <div class="content" id="mapinstall-panel">
+                
+                <!-- Installation instructions for windows -->
+                <h3>Windows </h3>
                 <p>
-                    Hello world!
+                    When installing custom maps, you would get them as a .bz2 file. This is an compressed filetype that is rather
+                    similar to a .zip or .rar archive file. In order to install the map, you must extract (or unzip) the file. Most
+                    modern Windows archive tools already support this format - simply use it to extract the .bz2 file into a .bsp
+                    map file. If you don't have an archive manager, simply use 7zip - it's free and lightweight, and it supports
+                    this format.
+                </p>
+                <br>
+                <p>
+                    After extracting the map file, you should see a .bsp file. This filetype is used by Steam's Source Engine games
+                    to store the map data. You must take this file and move it to your game directory. Since you are playing Team
+                    Fortress 2 on Steam, simply go to your Steam Library and mouse over the Team Fortress 2 entry in your catalogue.
+                    Once you find it, just right click - and select properties. In the properties menu, select "Browse Local Files".
+                    That would open up the /tf/ folder for you. Next, all you need is to navigate to the /tf/maps directory (a folder
+                    called maps), and paste in all of the extracted .bsp files. There, you have now installed the custom maps!
+                </p>
+                <hr>
+
+                <!-- Installation instructions for Mac OS -->
+                <h3>Mac OS  </h3>
+                <p>
+                    When installing custom maps, you would get them as a .bz2 file. This is s a compressed filetype that is rather
+                    similar to a .zip or .rar archive file. In order to install the map, you must extract (or unzip) the file. Mac
+                    supports the .bz2 file natively, therefore simply doubleclick it to extract - and you will get the .bsp map
+                    file for TF2!
+                </p>
+                <br>
+                <p>
+                    Now all you need to do is to find your Team Fortress 2 directory, and copy the files in. Since you are playing Team
+                    Fortress 2 on Steam, simply go to your Steam Library and mouse over the Team Fortress 2 entry in your catalogue.
+                    Once you find it, just right click - and select properties. In the properties menu, select "Browse Local Files".
+                    That would open up the /tf/ folder for you. Next, all you need is to navigate to the /tf/maps directory (a folder
+                    called maps), and paste in all of the extracted .bsp files. There, you have now installed the custom maps!
+                </p>
+                <hr>
+
+                <!-- Installation instructions for linux -->
+                <h3>Linux   </h3>
+                <p>
+                    If you are using linux, then you already should be knowing all this stuff. I bet you also went ahead and found the
+                    FastDL directory, and you are downloading all my maps through wget via the terminal. Either way, simply extract the
+                    .bz2 compressed files using your terminal by typing "tar jxf *.bsp.bz2", which would extract all the bsp.bz2 files
+                    in your directory.
+                </p>
+                <br>
+                <p>
+                    Now all you need to do is to find your Team Fortress 2 directory, and copy the files in. Since you are playing Team
+                    Fortress 2 on Steam, simply go to your Steam Library and mouse over the Team Fortress 2 entry in your catalogue.
+                    Once you find it, just right click - and select properties. In the properties menu, select "Browse Local Files".
+                    That would open up the /tf/ folder for you. Next, all you need is to navigate to the /tf/maps directory (a folder
+                    called maps), and paste in all of the extracted .bsp files. There, you have now installed the custom maps!
                 </p>
             </div>
 
