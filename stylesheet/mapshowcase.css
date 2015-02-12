@@ -266,6 +266,28 @@ hr {
 #map-description {
 	padding: 1em;
 }
+#selection-grid {
+	text-align:center;
+}
+
+.columns {
+	display: inline-block;
+	width: 12em;
+	border: 1px solid #000000;
+}
+
+#row1 {
+	height: 6em;
+	align: center;
+}
+#row2 {
+	height: 6em;
+}
+
+.cell {
+	height: 6em;
+	width: auto;
+}
 
 #copyright {
 	font-size: 0.1em;
