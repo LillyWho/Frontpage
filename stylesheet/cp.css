@@ -241,8 +241,9 @@ hr {
     background-color: #9D312F;
     text-align: center;
     color: #F5E7DE;
-    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);}
-
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    box-shadow: 1px 1px 1px 0px #000000;
+}
 #infopanel {
     box-shadow: 1px 1px 1px 0px;
     border-radius: 3px;
