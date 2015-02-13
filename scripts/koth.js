@@ -843,3 +843,8 @@ window.onload = function() {
 
     function_caller();
 }
+
+
+
+
+/* by shen zhou hong @ hong dot shenzhou at gmail dot com */
