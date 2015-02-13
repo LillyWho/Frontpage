@@ -380,6 +380,11 @@ li {
 	color: #F5E7DE;
 }
 
+#download-link {
+	text-align: center;
+	
+}
+
 address {
 	font-family: tf2secondary;
 	padding: 0.1em;
