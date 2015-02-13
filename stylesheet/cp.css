@@ -254,11 +254,14 @@ hr {
 
 #first-column {
     width: 60%;
+    height: 30em;
 }
 
 #second-column {
     width: 40%;
     vertical-align: top;
+    height: 30em;
+
 }
 
 #slideshow {

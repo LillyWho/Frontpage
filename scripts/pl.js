@@ -786,6 +786,11 @@ window.onload = function() {
             "#f3",
             "#f4",
             "#f5",
+            "#g1",
+            "#g2",
+            "#g3",
+            "#g4",
+            "#g5"
         ];
         var arrayLength = id_array.length;
 
@@ -827,6 +832,11 @@ window.onload = function() {
             "#f3",
             "#f4",
             "#f5",
+            "#g1",
+            "#g2",
+            "#g3",
+            "#g4",
+            "#g5"
         ];
         var arrayLength = id_array.length;
 

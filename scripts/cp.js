@@ -42,12 +42,12 @@ window.onload = function() {
                     var maptype = "cp"
 
                     $("#map-name").text(currentmap.toProperCase());
-                    $("#map-detailed-description").text("Welcome to the axle map!");
+                    $("#map-detailed-description").text("The cp axle is a 5 point CP map that is designed for hours of fun - both teams have to capture all control points in order to win, and the map's iconic design makes it not only a refreshing choice for the aspiring player, but also a challenging one. Teams must fight in variable terrain all the way from rocky outcrops to the interior of an air conditioned base!");
 
                     /* Secrets and hints */
-                    $("#li-1").text("First Secret");
-                    $("#li-2").text("Second Secret");
-                    $("#li-3").text("Third Secret");
+                    $("#li-1").text("Tight corners and darke edges makes this the perfect map for a sneaky pyro!");
+                    $("#li-2").text("The best places for a sentry camp are usually at the last control point in this map");
+                    $("#li-3").text("Alternative routes makes it easy for enemy spies to infiltrate your base, so watch out!");
 
                     /* Changes slideshow images */
                     for (var i = 1; i < 4; i++) {
@@ -65,12 +65,12 @@ window.onload = function() {
                     var maptype = "cp"
 
                     $("#map-name").text(currentmap.toProperCase());
-                    $("#map-detailed-description").text("Welcome to the beamvalley map!");
+                    $("#map-detailed-description").text("Welcome to the beamvalley map, where players would be fighting under a gigantic laser beam! In this map there are both wide open spaces and narrow corridors, so every class can play to it's best, and hidden sniper spots makes it easy to practice some headhunting as well. Texturing is also quite well done as well, with fantastic superweapons setting the backdrop for this conflict");
 
                     /* Secrets and hints */
-                    $("#li-1").text("First Secret");
-                    $("#li-2").text("Second Secret");
-                    $("#li-3").text("Third Secret");
+                    $("#li-1").text("This map is assymmetric, and divided into three areas - two outdoor zones and a indoor arena.");
+                    $("#li-2").text("Many props and corners makes it easy to hide around the map");
+                    $("#li-3").text("Only the first two areas are good for close ranged combat - the last stretch has wide open spaces!");
 
                     /* Changes slideshow images */
                     for (var i = 1; i < 4; i++) {
@@ -88,12 +88,12 @@ window.onload = function() {
                     var maptype = "cp"
 
                     $("#map-name").text(currentmap.toProperCase());
-                    $("#map-detailed-description").text("Welcome to the croissant map!");
+                    $("#map-detailed-description").text("Croissant is the de facto staple of professional team fortress 2 players, and it's quality can be still seen today in the careful arrangement of control points that it exhibits. The map is symmetic across the vertical axis rather then the horizontal axis, so it may be disorientating for newer players...");
 
                     /* Secrets and hints */
-                    $("#li-1").text("First Secret");
-                    $("#li-2").text("Second Secret");
-                    $("#li-3").text("Third Secret");
+                    $("#li-1").text("This map is curved - shaped literally like a croissant! Keep that in mind when navigating.");
+                    $("#li-2").text("Spies can use the underground back passage to directly go into the enemy base to sap sentries.");
+                    $("#li-3").text("Engineers take care when setting up sentries for the last point - you need to cover the 4 entryways!");
 
                     /* Changes slideshow images */
                     for (var i = 1; i < 4; i++) {
@@ -111,12 +111,12 @@ window.onload = function() {
                     var maptype = "cp"
 
                     $("#map-name").text(currentmap.toProperCase());
-                    $("#map-detailed-description").text("Welcome to the desertfortress map!");
+                    $("#map-detailed-description").text("This map may be loosly textured and not as appealing as the other maps, but don't let it's appearance fool you. It's a fantastic soldier spamfest, and although players might not like it for it's competitive merits, dessertfortress is fantastic fun for almost everyone involved! the map contains 3 capture points and a huge potential for fun!");
 
                     /* Secrets and hints */
-                    $("#li-1").text("First Secret");
-                    $("#li-2").text("Second Secret");
-                    $("#li-3").text("Third Secret");
+                    $("#li-1").text("Being soldier is often the best bet since the spaces are too open for pyros but too small for snipers");
+                    $("#li-2").text("At the beginning, scouts can cooperate together to quickcap the first point for a slight advantage.");
+                    $("#li-3").text("Sentries can be set up on the walkways above the control points - to a great effect!");
 
                     /* Changes slideshow images */
                     for (var i = 1; i < 4; i++) {
