@@ -383,3 +383,13 @@ a:active {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+/* gamtracker banner */
+gametrackerbanner {
+  background-color: #F5E7DE;
+	padding: 4em;
+	color: #000000;
+	border-style: dashed;
+	border-width: 0.3em;
+	border-color: #6A4535;
+}

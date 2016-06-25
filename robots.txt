@@ -3,3 +3,14 @@ Disallow: /stylesheet/
 Disallow: /scripts/
 Disallow: /media/fonts/
 Disallow: /media/logos/favicon/
+Disallow: /control/
+Disallow: /gpx/
+Disallow: /linux-dash
+Disallow: /CyanogenModOTA/
+Disallow: /supplydrop/
+Disallow: /tier5/
+Disallow: /phproxy/
+Disallow: /phptest/
+Disallow: /tf/
+Disallow: /kernels/
+Disallow: /airsoft
